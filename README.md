@@ -85,7 +85,10 @@ The rest of the dependencies can be installed through:
 ```bash
 git clone https://github.com/microsoft/renderformer
 cd renderformer
+# for original pip
 pip install -r requirements.txt
+# for uv users
+uv sync --no-isolation-package flash-attn
 python3 -c "import imageio; imageio.plugins.freeimage.download()"  # Needed for HDR image IO
 ```
 

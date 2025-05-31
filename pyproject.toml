@@ -1,0 +1,30 @@
+[project]
+name = "renderformer"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "dacite>=1.9.2",
+    "einops>=0.8.1",
+    "flash-attn>=2.7.4.post1",
+    "h5py>=3.13.0",
+    "huggingface-hub>=0.32.3",
+    "imageio[ffmpeg]>=2.37.0",
+    "natsort>=8.4.0",
+    "ninja>=1.11.1.4",
+    "pymeshlab>=2023.12.post3",
+    "renderformer-liger-kernel",
+    "roma>=1.5.2.1",
+    "safetensors>=0.5.3",
+    "scipy>=1.15.3",
+    "setuptools>=80.9.0",
+    "simple-ocio>=0.2.0",
+    "torch==2.6.0",
+    "torchaudio>=2.6.0",
+    "torchvision>=0.21.0",
+    "trimesh>=4.6.10",
+]
+
+[tool.uv.sources]
+renderformer-liger-kernel = { git = "https://github.com/iamNCJ/renderformer-liger-kernel.git" }
