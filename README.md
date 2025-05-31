@@ -107,6 +107,13 @@ We found a shader bug in the training data that we used in the submission. We re
 
 # Usage
 
+## model download
+
+```bash
+export HF_ENDPOINTS=https://hf-mirror.com
+huggingface-cli download microsoft/renderformer-v1.1-swin-large --local-dir ./model
+```
+
 ## Image Rendering
 
 ### Scene Conversion
